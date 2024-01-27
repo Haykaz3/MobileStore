@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".MenuFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/menuDisign"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@color/blue_menu">
+
+        <TextView
+            android:id="@+id/menuLyrics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="45dp"
+            android:text="Here you can select the section you are interested in"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/menuLaptops"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/menu_laptop"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="120dp"/>
+
+    <TextView
+        android:id="@+id/menuLaptopsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menuLaptops"
+        android:layout_marginLeft="170dp"
+        android:text="Laptops"
+        android:textColor="@color/blue"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/menuTablets"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/menu_tablet"
+        android:layout_below="@id/menuLaptops"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="120dp"/>
+
+    <TextView
+        android:id="@+id/menuTabletsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menuTablets"
+        android:layout_marginLeft="170dp"
+        android:text="Tablets"
+        android:textColor="@color/blue"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/menuSmartphones"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="400dp"
+        android:layout_toRightOf="@id/menuLaptops"
+        android:layout_marginLeft="120dp"
+        android:background="@drawable/menu_smartphone1" />
+
+    <TextView
+        android:id="@+id/menuSmartphonesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menuSmartphones"
+        android:layout_marginLeft="420dp"
+        android:text="Smartphones"
+        android:textColor="@color/blue"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/menuAll"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/menu_all1"
+        android:layout_below="@id/menuSmartphones"
+        android:layout_toRightOf="@id/menuTablets"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="120dp"/>
+
+    <TextView
+        android:id="@+id/menuAllText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menuAll"
+        android:layout_marginLeft="455dp"
+        android:text="All"
+        android:textColor="@color/blue"
+        android:textStyle="bold" />
+
+</RelativeLayout>
