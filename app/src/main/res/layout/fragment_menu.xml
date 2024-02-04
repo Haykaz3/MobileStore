@@ -4,26 +4,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center"
     tools:context=".MenuFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/menuDisign"
+        android:id="@+id/menuDesign"
         android:layout_width="match_parent"
         android:layout_height="350dp"
         android:background="@color/blue_menu">
+
+        <ImageView
+            android:id="@+id/apple_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/apple_logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.181"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/samsung_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/samsung_logo"
+            app:layout_constraintBottom_toTopOf="@+id/menuLyrics"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.541"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.464"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/xiaomi_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/xiaomi_logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.484"
+            app:layout_constraintStart_toEndOf="@+id/samsung_logo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.652"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/menuLyrics"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="45dp"
-            android:text="Here you can select the section you are interested in"
+            android:text="Select the section"
             android:textColor="@color/white"
             android:textSize="25dp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.854"
             tools:ignore="MissingConstraints" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
